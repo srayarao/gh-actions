@@ -16,7 +16,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - id: foo
-        uses: actions/gh-actions@v1
+        uses: gh-actions@v1
         with:
           token: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
           who-to-greet: 'Mona the Octocat'
