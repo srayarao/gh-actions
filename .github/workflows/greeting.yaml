@@ -15,6 +15,10 @@ jobs:
     name: A job to say hello
     steps:
       - uses: actions/checkout@v3
+        with:
+          repository: srayaro/gh-actions
+          ref: v3
+          token: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
       - id: foo
         uses: /.github/actions/greetings@v3
         with:
