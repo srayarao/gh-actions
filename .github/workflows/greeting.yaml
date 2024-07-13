@@ -16,7 +16,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - id: foo
-        uses: ./.github/actions@v3
+        uses: ./.github/greetings/action@v3
         with:
           token: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
           who-to-greet: 'Mona the Octocat'
